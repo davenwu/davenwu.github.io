@@ -1,89 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Daven Wu</title>
+<title>Daven Wu</title>
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!-- Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'
+type='text/css'>
 
-        <!-- Bootstrap -->
-        <!-- Latest compiled and minified CSS -->
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
-        <link rel="stylesheet" href="css/stylesheet.css">
+<!-- Fontawesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/index.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-    </head>
+</head>
 
-    <body>
-        <div class="site-wrapper">
-            <div class="site-wrapper-inner">
-                <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-header-collapse">
-                                <span class="sr-only">Toggle Navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="navbar-header-collapse">
-                            <ul class="nav navbar-nav navbar-right" style="background: #333">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="mailto:epikglow@gmail.com">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cover-container">
-                    <div class="inner cover">
-                        <h1 class="cover-heading">Daven Wu</h1>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md4">
-                            <a href="https://github.com/epik-glow">
-                                <img class="img-circle" style="width:120px; height:120px" src="assets/github.png" />
-                                <br />
-                                <h2>GitHub</h2>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-                            <a href="https://www.linkedin.com/pub/daven-wu/94/49b/a46">
-                                <img style="height:120px" src="assets/linkedin.png" />
-                                <br />
-                                <h2>LinkedIn</h2>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-                            <a href="assets/resume.pdf">
-                                <img style="height:120px" src="assets/resume.png" />
-                                <br />
-                                <h2>Resume</h2>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<body>
+<!-- Navbar -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle"
+                    data-toggle="collapse" data-target="#navbar-collapse"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="#">Daven Wu</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
+    </div>
+</div>
 
-        <!-- Bootstrap core JavaScript
+<!-- Jumbotron header -->
+<div class="jumbotron primary-section">
+    <div class="container">
+        <h1>Daven Wu</h1>
+        <br />
+        <div class="col-xs-4 col-xs-offset-4">
+            <img src="assets/my_face.jpg"
+            class="img-circle img-responsive" />
+        </div>
+    </div>
+</div>
+
+<!-- About section -->
+<div id="about" class="primary-section"> 
+    <div class="container">
+        <h2>About Me</h2>
+        <hr class="soften" />
+        <h4>Hi! I am a student currently studying Computer Science at the
+            University of Maryland, College Park!</h4>
+        <br />
+        <h4>Things I enjoy: programming, playing Counter-Strike: Global
+            Offensive, attending hackathons</h4>
+    </div>
+</div>
+
+<!-- Projects section -->
+<div id="projects" class="primary-section">
+    <div class="container">
+        <h2>Projects</h2>
+        <hr class="soften" />
+        <div class="project" data-toggle="modal"
+            data-target="#artroom_modal">
+            <img src="assets/artroom_icon.png"
+            class="img-responsive">
+            <p>ArtRoom</p>
+        </div>
+        <div class="project" data-toggle="modal"
+            data-target="#friendcast_modal">
+            <img src="assets/friendcast_icon.png"
+            class="img-responsive">
+            <p>Friendcast</p>
+        </div>
+        <div class="project" data-toggle="modal"
+            data-target="#csgo_bets_modal">
+            <img src="assets/csgobets_icon.png"
+            class="img-responsive">
+            <p>CSGO Bets</p>
+        </div>
+        <div class="project" data-toggle="modal"
+            data-target="#whatchamacallit_modal">
+            <img src="assets/whatchamacallit_icon.png"
+            class="img-responsive">
+            <p>Whatchamacallit</p>
+        </div>
+    </div>
+</div>
+
+<!-- Contact/social media section -->
+<div id="contact" class="primary-section">
+    <div class="container">
+        <h2>Contact</h2>
+        <hr class="soften" />
+        <h3>Here are some ways to get in touch with me!</h3>
+        <br />
+        <div class="row" id="contact-row">
+            <div class="col-md-3">
+                <a href="mailto:daven9603@yahoo.com">
+                    <i class="fa fa-envelope-o fa-4x"></i>
+                    <br />
+                    <h3>Email</h3>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="http://github.com/epik-glow">
+                    <i class="fa fa-github fa-4x"></i>
+                    <br />
+                    <h3>GitHub</h3>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.linkedin.com/pub/daven-wu/94/49b/a46">
+                    <i class="fa fa-linkedin-square fa-4x"></i>
+                    <br />
+                    <h3>LinkedIn</h3>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="assets/resume.pdf">
+                    <i class="fa fa-file-text-o fa-4x"></i>
+                    <br />
+                    <h3>Resume</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ArtRoom info modal -->
+<div class="modal fade" id="artroom_modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+                <div class="container">
+                    <h4 class="modal-title">ArtRoom</h4>
+                    <p><i>Created at YHack
+                        2014 (October 31, 2014 - November 2, 2014)</i></p>
+                    <p><a href="https://github.com/churichard/ArtRoom">
+                        Source Code</a></p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="jumbotron">
+                    <div class="container">
+                        <img src="assets/yhack_2014.png"
+                        class="img-responsive">
+                    </div>
+                </div>
+                <p>ArtRoom is an Android application that allows users to,
+                in an art museum context or such, scan an art object and
+                promptly get information regarding the scanned object. It
+                is intended to generate interest in art and art history
+                by integrating technology and making it simple to learn
+                about art.  Additionally, users can discuss and comment on
+                the scanned object with others via Moxtra.</p>
+                <h4>Awards</h4>
+                <ul>
+                    <li><b>Runner-up for Best Use of Google APIs</b> at
+                    YHack 2014</li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Friendcast info modal -->
+<div class="modal fade" id="friendcast_modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+                <div class="container">
+                    <h4 class="modal-title">Friendcast</h4>
+                    <p><i>Created at
+                        HackRU Fall 2014 (October 11, 2014 - October 12,
+                        2014)</i></p>
+                    <p><a href="https://github.com/churichard/friendcast">
+                        Source Code</a></p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="jumbotron">
+                    <div class="container">
+                        <img src="assets/hackru_fall_2014.png"
+                        class="img-responsive">
+                    </div>
+                </div>
+                <p>Friendcast is an Android application that is meant to
+                make it simpler to get together with your friends. This can
+                be extended to be used for multiple purposes from eating out
+                to having fun. The app scans the user's location and, using
+                the Google Maps API, finds nearby food locations. Once a 
+                location is chosen, the user can then select which of their
+                Facebook friends (who also have Friendcast installed) to
+                notify; they can then choose to accept or reject the
+                invitation to go eat.</p>
+                <h4>Awards</h4>
+                <ul>
+                    <li><b>Favorite Yodle Hack</b> at HackRU Fall 2014</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CSGO Bets info modal -->
+<div class="modal fade" id="csgo_bets_modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+                <div class="container">
+                    <h4 class="modal-title">CSGO Bets</h4>
+                    <p><i>Released: August 2014</i></p>
+                    <p><a href="https://github.com/Epik-Glow/csgobets">
+                        Source Code</a></p>
+                </div>
+            </div> 
+            <div class="modal-body">
+                <div class="jumbotron">
+                    <div class="container">
+                        <img src="assets/csgobets_wide.png"
+                        class="img-responsive">
+                    </div>
+                </div>
+                <p>CSGO Bets was my first and
+                only Android app published on the Google Play Store.
+                Its main purpose was to easily allow users to view
+                information regarding matches/bets from
+                <a href="http://csgolounge.com">csgolounge.com</a>.
+                Over the course of its lifetime, the app received over
+                13,000 total installs and over 290 ratings.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Whatchamacallit info modal -->
+<div class="modal fade" id="whatchamacallit_modal" tabindex="-1"
+    role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+                <div class="container">
+                    <h4 class="modal-title">Whatchamacallit</h4>
+                    <p><i>Created at
+                        HackRU Spring 2014 (April 12, 2014 - April 13,
+                        2014)</i></p>
+                    <p><a
+                        href="https://github.com/Epik-Glow/whatchamacallit">
+                        Source Code</a></p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="jumbotron">
+                    <div class="container">
+                        <img src="assets/hackru_spring_2014.png"
+                        class="img-responsive">
+                    </div>
+                </div>
+                <p>Whatchamacallit is a Google Glass app that allows the
+                user to say a short phrase or rough definition of a word
+                that they are thinking of, but can't quite grasp. Upon
+                saying their phrase/definition, the app will attempt to
+                find and display the most closely related words.</p>
+                <h4>Awards</h4> 
+                <ul>
+                    <li><b>Best Educational Hack</b>
+                    at HackRU Fall 2014</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    <p>Copyright 2015 by Daven Wu. All rights reserved.</p>
+</div>
+
+<!-- Bootstrap core JavaScript
         ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+<!-- Placed at the end of the document so the pages load faster -->
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script src="js/bootstrap.js"></script>
+</body>
 </html>
