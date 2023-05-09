@@ -1,10 +1,19 @@
 /* Global */
-h1, h2, h3, h4, h5, h6, a, p {
-    font-family: "Roboto", Arial, sans-serif;
+body {
+    background-color: #192a56;
 }
 
+h1, h2, h3, h4, h5, h6, p, .modal-content li {
+    color: #dcdde1;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* Primary sections */
 .primary-section {
-    padding: 3em 0;
+    padding: 4em 0;
     text-align: center;
 }
 
@@ -12,6 +21,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     font-weight: bold;
 }
 
+/* Horizontal rules */
 hr {
     margin-bottom: 2em;
 }
@@ -20,30 +30,25 @@ hr {
  * Thank you whoever uploaded this! */
 hr.soften {
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,.8), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,.8), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,.8), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(255,255,255,.8), rgba(0,0,0,0));
     border: 0;
-}
-
-/* Jumbotron section */
-.jumbotron h1 {
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* About section */
 #about {
-    text-align: center;
+	padding-top: 10em;
+    text-align: left;
 }
 
 /* Projects section */
 .project {
     display: inline-block;
     padding: 1em 1em 0 1em;
-    margin: 0 1em 0 1em; 
+    margin: 0 1em 0 1em;
     transition: all .3s ease-in-out;
-    max-width: 200px;
 }
 
 .project:hover {
@@ -54,37 +59,44 @@ hr.soften {
 
 .project img {
     margin: 0 auto;
+    width: 200px;
 }
 
 .project p {
     text-align: center;
 }
 
+/* Other stuff section */
+#other_stuff img {
+    max-width: 100%;
+    margin: 1em 0;
+}
+
 /* Contact section */
 #contact {
-    background-color: rgb(189, 195, 199);
+    background-color: #273c75;
     text-align: center;
 }
 
 #contact a {
     display: inline-block;
-    color: #000;
+    color: #999;
 }
 
-#contact a:hover {
+#contact a:hover, #contact a:hover > h3 {
     color: #3498db;
 }
 
 /* Footer */
 #footer {
     padding: 0.5em 0;
-    background-color: rgb(127, 140, 141);
+    background-color: #192a56;
 }
 
 #footer p {
     text-align: center;
     margin: 0 auto;
-    color: #000;
+	color: #718093;
 }
 
 /********************* MODALS *********************/
@@ -92,17 +104,23 @@ hr.soften {
     font-weight: bold;
 }
 
-.modal-body p {
-    text-align: justify;
-    padding: 0 1em;
+.modal-content {
+    background-color: #444;
+	padding: 1em 2em;
 }
 
-.modal-body h4 {
+.modal-title {
     font-weight: bold;
     margin-top: 2em;
 }
 
-.modal-body img {
-    margin: 0 auto;
-    max-height: 250px;
+.modal-body-banner {
+	display: block;
+	margin: 2em auto;
+	max-height: 250px;
+}
+
+.modal-body p {
+    text-align: justify;
+    padding: 0 1em;
 }

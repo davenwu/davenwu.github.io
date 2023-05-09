@@ -8,24 +8,22 @@
         <title>Daven Wu</title>
 
         <!-- Bootstrap -->
-        <!-- Latest compiled and minified CSS -->
-
+        <!-- Latest compiled and minified CSS from jsDelivr -->
         <link
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-            integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-            crossorigin="anonymous"
             rel="stylesheet"
-            type="text/css">
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous">
 
         <!-- Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        
-        <!-- Fontawesome -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"
-        integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O"
-        crossorigin="anonymous"
-        rel="stylesheet"
-        type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
 
         <!-- Custom CSS -->
         <link href="css/index.css" rel="stylesheet" type="text/css">
@@ -39,53 +37,14 @@
     </head>
 
     <body>
-        <!-- Navbar -->
-        <div class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle"
-                            data-toggle="collapse" data-target="#navbar-collapse"
-                            aria-expanded="false">
-                            <span class="sr-only">Toggle Navigation</span>
-                            <span class="icon-bar"></span> 
-                            <span class="icon-bar"></span> 
-                            <span class="icon-bar"></span> 
-                        </button>
-                        <a class="navbar-brand" href="#">Daven Wu</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Jumbotron header -->
-        <div class="jumbotron primary-section">
-            <div class="container">
-                <h1>Daven Wu</h1>
-                <br />
-                <div class="col-xs-4 col-xs-offset-4">
-                    <img src="assets/my_face.jpg"
-                    class="img-circle img-responsive" />
-                </div>
-            </div>
-        </div>
-
         <!-- About section -->
         <div id="about" class="primary-section"> 
             <div class="container">
-                <h2>About Me</h2>
-                <hr class="soften" />
-                <h4>Hi! I am a currently a software engineer at ALK Technologies! I recently
-                    graduated from the University of Maryland, College Park. Go Terps! 🐢</h4>
+                <h4>Hi! I am a software engineer that has worked with many technologies across various parts of the
+				stack -- with a focus on the back-end side of things. I love building products that bring joy to both
+				the users using them and the engineers working on them.</h4>
                 <br />
-                <h4>Things I enjoy: programming, listening to music, and playing video games</h4>
+                <h4>Some things that I enjoy other than programming: music, video games, and cars/driving</h4>
             </div>
         </div>
 
@@ -165,24 +124,19 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">
+						<button type="button" class="close mr-auto" data-dismiss="modal">
                             &times;
                         </button>
                         <div class="container">
-                            <h4 class="modal-title">ArtRoom</h4>
+							<h4 class="modal-title">Mooch</h4>
                             <p><i>Created at Daemon Dash 2015
                                 (September 26, 2015 - September 27, 2015)</i></p>
-                            <p><a href="https://github.com/Epik-Glow/mooch" target="blank">
+                            <p><a href="https://github.com/davenwu/mooch" target="blank">
                                 Source Code</a></p>
                         </div>
                     </div>
                     <div class="modal-body">
-                        <div class="jumbotron">
-                            <div class="container">
-                                <img src="assets/mooch_banner.png"
-                                class="img-responsive">
-                            </div>
-                        </div>
+						<img src="assets/mooch_banner.png" class="img-responsive modal-body-banner">
                         <p>Mooch is a Chrome extension that allows the user to
                         share some accounts with their friends, family, and
                         and trusted persons without transferring any login
@@ -217,12 +171,7 @@
                         </div>
                     </div>
                     <div class="modal-body">
-                        <div class="jumbotron">
-                            <div class="container">
-                                <img src="assets/yhack_2014.png"
-                                class="img-responsive">
-                            </div>
-                        </div>
+						<img src="assets/yhack_2014.png" class="img-responsive modal-body-banner">
                         <p>ArtRoom is an Android application that allows users to,
                         in an art museum context or such, scan an art object and
                         promptly get information regarding the scanned object. It
@@ -258,12 +207,7 @@
                         </div>
                     </div>
                     <div class="modal-body">
-                        <div class="jumbotron">
-                            <div class="container">
-                                <img src="assets/hackru_fall_2014.png"
-                                class="img-responsive">
-                            </div>
-                        </div>
+						<img src="assets/hackru_fall_2014.png" class="img-responsive modal-body-banner">
                         <p>Friendcast is an Android application that is meant to
                         make it simpler to get together with your friends. This can
                         be extended to be used for multiple purposes from eating out
@@ -293,17 +237,12 @@
                         <div class="container">
                             <h4 class="modal-title">CSGO Bets</h4>
                             <p><i>Released: August 2014</i></p>
-                            <p><a href="https://github.com/Epik-Glow/csgobets" target="blank">
+                            <p><a href="https://github.com/davenwu/csgobets" target="blank">
                                 Source Code</a></p>
                         </div>
                     </div> 
                     <div class="modal-body">
-                        <div class="jumbotron">
-                            <div class="container">
-                                <img src="assets/csgobets_wide.png"
-                                class="img-responsive">
-                            </div>
-                        </div>
+						<img src="assets/csgobets_wide.png" class="img-responsive modal-body-banner">
                         <p>CSGO Bets was my first and
                         only Android app published on the Google Play Store.
                         Its main purpose was to easily allow users to view
@@ -337,17 +276,12 @@
                                 HackRU Spring 2014 (April 12, 2014 - April 13,
                                 2014)</i></p>
                             <p><a
-                                href="https://github.com/Epik-Glow/whatchamacallit" target="blank">
+                                href="https://github.com/davenwu/whatchamacallit" target="blank">
                                 Source Code</a></p>
                         </div>
                     </div>
                     <div class="modal-body">
-                        <div class="jumbotron">
-                            <div class="container">
-                                <img src="assets/hackru_spring_2014.png"
-                                class="img-responsive">
-                            </div>
-                        </div>
+						<img src="assets/hackru_spring_2014.png" class="img-responsive modal-body-banner">
                         <p>Whatchamacallit is a Google Glass app that allows the
                         user to say a short phrase or rough definition of a word
                         that they are thinking of, but can't quite grasp. Upon
@@ -365,18 +299,17 @@
 
         <!-- Footer -->
         <div id="footer">
-            <p>Copyright 2019 by Daven Wu. All rights reserved.</p>
+            <p>Handcrafted in 2023 by yours truly</p>
         </div>
 
+        <!-- jQuery and Bootstrap -->
         <script
-            src="https://code.jquery.com/jquery-2.2.3.min.js"
-            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-            crossorigin="anonymous">
-        </script>
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
         <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-            crossorigin="anonymous">
-        </script>
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
     </body>
 </html>
