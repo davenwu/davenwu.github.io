@@ -100,18 +100,18 @@ hr.soften {
 }
 
 /********************* MODALS *********************/
-.modal-title {
-    font-weight: bold;
-}
-
-.modal-content {
-    background-color: #444;
-	padding: 1em 2em;
+.btn-close {
+	filter: brightness(0) saturate(100%) invert(95%) sepia(5%) saturate(125%) hue-rotate(191deg) brightness(95%) contrast(89%);
 }
 
 .modal-title {
     font-weight: bold;
     margin-top: 2em;
+}
+
+.modal-content {
+    background-color: #444;
+	padding: 1em 2em;
 }
 
 .modal-body-banner {
