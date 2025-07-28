@@ -66,10 +66,21 @@ hr.soften {
     text-align: center;
 }
 
-/* Other stuff section */
-#other_stuff img {
-    max-width: 100%;
-    margin: 1em 0;
+.project-button {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-button h3 {
+    font-family: serif;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0 0 6px black;
+    color: #3ae180;
+    user-select: none;
 }
 
 /* Contact section */
